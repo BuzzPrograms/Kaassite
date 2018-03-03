@@ -1,0 +1,145 @@
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+div.menu-div {
+	position: fixed;
+	width: 100vw;
+	z-index: 200;
+}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+
+li.menu {
+	float: left;
+}
+
+li.menu a {
+	display: block;
+	font-family: 'Lobster', cursive;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li.menu a:hover {
+	background-color: #111111;
+}
+
+h2 {
+	font-family: 'Lobster';
+	color: #111111;
+}
+
+p.wistjedat {
+	font-family: 'Lobster';
+	color: #111111;
+}
+
+p.weetjes {
+	font-family: 'Lobster';
+	color: #111111;
+}
+
+li.weetjes a {
+    font-family: "Courier New", Courier, monospace;
+    color: #111111;
+}
+
+img.kaasimage {
+	width:100%;
+	height: 100%;
+}
+
+div.kaasweetjes {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+a.blokkie {
+	font-family: 'Lobster';
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+}
+
+div.blokkie {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(51,51,51,0.8);
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: 10px;
+}
+
+div.image {
+	position:relative;
+	text-align: center;
+	color: white;
+}
+
+img.kaaswinkel {
+	text-align: right;
+	float: right;
+	display: inline;
+}
+
+footer.footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	font-family: 'Lobster';
+	color: #FFFFFF;
+	background-color: #111111; 
+	text-align: center;
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+p.stap1 {
+	font-family: "Courier New", Courier, monospace;
+	color: #111111;
+}
+
+div.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+div.geschiedenis {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+p.Kaasland {
+	font-family: "Courier New", Courier, monospace;
+	color: #111111;
+}
+
+img.historyimage {
+    text-align: right;
+    float: right;
+    display: inline;
+}
