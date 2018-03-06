@@ -42,5 +42,16 @@
   </p>
 </form>
      </div>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	   <script type="text/javascript">
+		   $("#contact").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Bedankt voor uw bericht, wij behandelen dit zo snel mogelijk!");
+  });
+});
+	   </script>
    </body>
 </html>
