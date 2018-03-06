@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	   <script src="main.js"></script>
+      <title>Kaas</title>
+   </head>
+   <body>
+      <div class="menu-div">
+         <ul class="menu">
+            <li class="menu"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="menu"><a href="#"><i class="fa fa-industry" aria-hidden="true"></i> Productie</a></li>
+            <li class="menu"><a href="#"><i class="fa fa-history" aria-hidden="true"></i> Geschiedenis</a></li>
+            <li class="menu"><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Contact</a></li>
+         </ul>
+	   </div>
+	   <div>
+		   <br>
+		   <br>
+		   <h1>Contact</h1>
+		   <a>Hieronder kunt u contact met ons opnemen!</a>
+	   </div>
+	   <div id="contact">
+     <form name="contact" method="POST" netlify>
+  <p>
+    <label>Uw naam: <input type="text" name="name"></label>   
+  </p>
+  <p>
+    <label>Uw Email: <input type="email" name="email"></label>
+  </p>
+  <p>
+    <label>Bericht: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Verzenden</button>
+  </p>
+</form>
+     </div>
+   </body>
+</html>
