@@ -101,7 +101,7 @@ img.kaaswinkel {
 }
 
 footer.footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 15%;
     right: 0;
