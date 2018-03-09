@@ -152,6 +152,6 @@ img.historyimage {
 }
 
 background-image {
-    -webkit-filter: brightness(10%);
-    filter: brightness(10%);
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
 }
