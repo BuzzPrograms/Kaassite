@@ -150,3 +150,8 @@ img.historyimage {
     float: right;
     display: inline;
 }
+
+background-image {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+}
