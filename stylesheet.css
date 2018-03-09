@@ -122,7 +122,12 @@ div.grid-container {
 
 p.stap1 {
 	font-family: "Courier New", Courier, monospace;
-	color: #111111;
+	color: #FFFFFF;
+}
+
+h2.stappen {
+	font-family: "Courier New", Courier, monospace;
+	color: #FFFFFF;
 }
 
 div.grid-item {
