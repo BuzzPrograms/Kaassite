@@ -12,38 +12,37 @@
 </head>
 
 <body>
-    <div class="menu-div">
-      <ul class="menu">
-        <li class="menu"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li class="menu"><a href="productie.html"><i class="fas fa-industry"></i> Productie</a></li>
-        <li class="menu"><a href="geschiedenis.html"><i class="fas fa-history"></i> Geschiedenis</a></li>
-        <li class="menu"><a href="recepten.html"><i class="fas fa-utensils"></i> Recepten</a></li>
-        <li class="menu"><a href="contact.html"><i class="fas fa-user"></i> Contact</a></li>
+  <div class="menu-div">
+    <ul class="menu">
+      <li class="menu"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li class="menu"><a href="productie.html"><i class="fas fa-industry"></i> Productie</a></li>
+      <li class="menu"><a href="geschiedenis.html"><i class="fas fa-history"></i> Geschiedenis</a></li>
+      <li class="menu"><a href="recepten.html"><i class="fas fa-utensils"></i> Recepten</a></li>
+      <li class="menu"><a href="contact.html"><i class="fas fa-user"></i> Contact</a></li>
+    </ul>
+  </div>
+  <div class="contact">
+    <br>
+    <br>
+    <h1>Contact</h1>
+    <a>Hieronder kunt u contact met ons opnemen!</a>
+    <form name="contact" method="POST" netlify>
+      <ul class="form-style-1">
+        <li><label>Naam <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="Voornaam" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Achternaam" /></li>
+        <li>
+          <label>Email <span class="required">*</span></label>
+          <input type="email" name="field3" class="field-long" />
+        </li>
+        <li>
+          <label>Uw bericht <span class="required">*</span></label>
+          <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+        </li>
+        <li>
+          <input type="submit" value="Verzend" />
+        </li>
       </ul>
-    </div>
-    <div>
-      <br>
-      <br>
-      <h1>Contact</h1>
-      <a>Hieronder kunt u contact met ons opnemen!</a>
-    </div>
-    <div id="contact">
-      <form name="contact" method="POST" netlify>
-        <p>
-          <label>Uw naam: <input type="text" name="name"></label>
-        </p>
-        <p>
-          <label>Uw Email: <input type="email" name="email"></label>
-        </p>
-        <p>
-          <label>Bericht: <textarea name="message"></textarea></label>
-        </p>
-        <div netlify-recaptcha></div>
-        <p>
-          <button type="submit">Verzenden</button>
-        </p>
-      </form>
-    </div>
+    </form>
+  </div>
 </body>
 
 </html>

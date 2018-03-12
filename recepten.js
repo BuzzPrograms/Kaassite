@@ -23,9 +23,9 @@ $(document).ready(function() {
     }).success(function(gistdata) {
       var content = JSON.parse(gistdata.data.files["Gists.json"].content);
       for (var i = 0; i < content["recipies"].length; i++) {
-        $('#main').append('<div class="recept" style="background: url('+ content.recipies[i].photo +'); background-size: cover;"><a id="ft" class="recept" href="?id=' + content.recipies[i].id + '&file=' + content.recipies[i].file + '">' + content.recipies[i].name + '</a></div>');
+        $('#main').append('<div class="recept" style="background: url('+ content.recipies[i].photo +'); background-size: cover;"><a id="ft"'+ [i] +' class="recept" href="?id=' + content.recipies[i].id + '&file=' + content.recipies[i].file + '">' + content.recipies[i].name + '</a></div>');
+        $("#ft").fitText();
       }
-      $("#ft").fitText();
     }).error(function(e) {
       alert("Error");
     });
