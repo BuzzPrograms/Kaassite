@@ -1,46 +1,49 @@
 <!doctype html>
-<html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://www.kaasislekker.nl/kaas.png">
-    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-      <title>Kaas</title>
-   </head>
-   <body>
-      <div class="menu-div">
-      <div class="menu-div">
-         <ul class="menu">
-            <li class="menu"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li class="menu"><a href="productie.html"><i class="fas fa-industry"></i> Productie</a></li>
-            <li class="menu"><a href="geschiedenis.html"><i class="fas fa-history"></i> Geschiedenis</a></li>
-	    <li class="menu"><a href="recepten.html"><i class="fas fa-utensils"></i> Recepten</a></li>
-            <li class="menu"><a href="contact.html"><i class="fas fa-user"></i> Contact</a></li>
-         </ul>
-	   </div>
-	   <div>
-		   <br>
-		   <br>
-		   <h1>Contact</h1>
-		   <a>Hieronder kunt u contact met ons opnemen!</a>
-	   </div>
-	   <div id="contact">
-     <form name="contact" method="POST" netlify>
-  <p>
-    <label>Uw naam: <input type="text" name="name"></label>   
-  </p>
-  <p>
-    <label>Uw Email: <input type="email" name="email"></label>
-  </p>
-  <p>
-    <label>Bericht: <textarea name="message"></textarea></label>
-  </p>
-	       <div netlify-recaptcha></div>
-  <p>
-    <button type="submit">Verzenden</button>
-  </p>
-</form>
-     </div>
-   </body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.kaasislekker.nl/kaas.png">
+  <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <title>Kaas</title>
+</head>
+
+<body>
+    <div class="menu-div">
+      <ul class="menu">
+        <li class="menu"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="menu"><a href="productie.html"><i class="fas fa-industry"></i> Productie</a></li>
+        <li class="menu"><a href="geschiedenis.html"><i class="fas fa-history"></i> Geschiedenis</a></li>
+        <li class="menu"><a href="recepten.html"><i class="fas fa-utensils"></i> Recepten</a></li>
+        <li class="menu"><a href="contact.html"><i class="fas fa-user"></i> Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <br>
+      <br>
+      <h1>Contact</h1>
+      <a>Hieronder kunt u contact met ons opnemen!</a>
+    </div>
+    <div id="contact">
+      <form name="contact" method="POST" netlify>
+        <p>
+          <label>Uw naam: <input type="text" name="name"></label>
+        </p>
+        <p>
+          <label>Uw Email: <input type="email" name="email"></label>
+        </p>
+        <p>
+          <label>Bericht: <textarea name="message"></textarea></label>
+        </p>
+        <div netlify-recaptcha></div>
+        <p>
+          <button type="submit">Verzenden</button>
+        </p>
+      </form>
+    </div>
+</body>
+
 </html>
