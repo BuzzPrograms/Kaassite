@@ -197,11 +197,6 @@ label {
     color: #FFFFFF;
 }
 
-div.netlify-recaptcha {
-	width: 100%;
-	text-align: center;
-}
-
 .form-style-1 {
     margin:10px auto;
     max-width: 400px;
