@@ -274,6 +274,8 @@ select{
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
     background: #4691A4;
     box-shadow:none;
+	width: 100%;
+	text-align: center;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
 }
