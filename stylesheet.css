@@ -267,6 +267,8 @@ select{
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
     background: #4B99AD;
+		width: 100%;
+	text-align: center;
     padding: 8px 15px 8px 15px;
     border: none;
     color: #fff;
