@@ -14,7 +14,7 @@ $(document).ready(function() {
         html = converter.makeHtml(text);
       $('#lekker').remove();
       $('#lekker2').remove()
-      $('#main').append('<img allign="right" src='+ picture +'></img> <div>' + html + '</div>');
+      $('#main').append('<img class="receptimg" src='+ picture +'></img> <div>' + html + '</div>');
     }).error(function(e) {
         alert("Error");
     });

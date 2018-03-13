@@ -197,6 +197,12 @@ a.recept {
 	left: 30px;
 }
 
+.receptimg {
+	position: absolute;
+	right: 0px;
+	padding: 10px;
+}
+
 background-image {
   -webkit-filter: brightness(100%);
   filter: brightness(100%);
