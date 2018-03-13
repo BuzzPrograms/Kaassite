@@ -13,6 +13,7 @@ $(document).ready(function() {
         text = gistdata.data.files[file].content,
         html = converter.makeHtml(text);
       $('#lekker').remove();
+      $('#lekker2').remove()
       $('#main').append('<img allign="right" src='+ picture +'></img> <div>' + html + '</div>');
     }).error(function(e) {
         alert("Error");
