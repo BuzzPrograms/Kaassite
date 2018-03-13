@@ -1,7 +1,8 @@
 $(document).ready(function() {
   let id = findGetParameter("id")
   let file = findGetParameter("file")
-  if (id != null || id != undefined && file != null || file != undefined) {
+  let picture = findGetParameter("p")
+  if (id != null || id != undefined && file != null || file != undefined & picture != null || picture != undefined ) {
     $.ajax({
       url: 'https://api.github.com/gists/' + id,
       type: 'GET',
@@ -12,7 +13,7 @@ $(document).ready(function() {
         text = gistdata.data.files[file].content,
         html = converter.makeHtml(text);
       $('#lekker').remove();
-      $('#main').append('<div>' + html + '</div>');
+      $('#main').append('<img allign="right" src='+ picture +'></img> <div>' + html + '</div>');
     }).error(function(e) {
         alert("Error");
     });
@@ -24,7 +25,7 @@ $(document).ready(function() {
     }).success(function(gistdata) {
       var content = JSON.parse(gistdata.data.files["Gists.json"].content);
       for (var i = 0; i < content["recipies"].length; i++) {
-        $('#main').append('<div class="recept" style="background: url('+ content.recipies[i].photo +'); background-size: cover;"><a id="ft"'+ [i] +' class="recept" href="?id=' + content.recipies[i].id + '&file=' + content.recipies[i].file + '">' + content.recipies[i].name + '</a></div>');
+        $('#main').append('<div class="recept" style="background: url('+ content.recipies[i].photo +'); background-size: cover;"><a id="ft"'+ [i] +' class="recept" href="?id=' + content.recipies[i].id + '&file=' + content.recipies[i].file + '&p'+ content.recipies[i].photo +'">' + content.recipies[i].name + '</a></div>');
       }
     }).error(function(e) {
       alert("Error");
