@@ -11,6 +11,7 @@ $(document).ready(function() {
       var converter = new showdown.Converter(),
         text = gistdata.data.files[file].content,
         html = converter.makeHtml(text);
+      $('#lekker').remove();
       $('#main').append('<div>' + html + '</div>');
     }).error(function(e) {
         alert("Error");
