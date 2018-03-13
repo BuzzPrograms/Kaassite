@@ -105,6 +105,11 @@ div.blokkie {
   margin: 10px;
 }
 
+p#lekker {
+  font-family: "Courier New", Courier, monospace;
+  color: #111111;
+}
+
 div.image {
 	padding-top: 52px;
   position: relative;
