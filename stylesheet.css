@@ -108,6 +108,15 @@ div.blokkie {
 p#lekker {
   font-family: "Courier New", Courier, monospace;
   color: #111111;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2#lekker {
+  font-family: 'Lobster';
+  color: #111111;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 div.image {
