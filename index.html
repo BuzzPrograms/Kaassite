@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 
@@ -10,13 +9,6 @@
   <link rel="shortcut icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<scrìpt src="./cookiechoices.js"></scrìpt>
-<scrìpt>
-  cookieChoices.showCookieBar({
-    linkHref: 'google.nl',
-    language: 'nl'
-  )});
-</scrìpt>
   <title>Kaas</title>
 </head>
 
@@ -69,9 +61,16 @@
       </a>
     </p>
   </div>
-<footer class="footer">
-  Kaasmennekes &copy 2017-2018
-</footer>
+  <script src="./cookiechoices.js"></script>
+  <script>
+    cookieChoices.showCookieBar({    
+      linkHref: 'google.nl',
+          language: 'nl'  )
+    });
+  </script>
+  <footer class="footer">
+    Kaasmennekes &copy 2017-2018
+  </footer>
 </body>
 
 </html>
