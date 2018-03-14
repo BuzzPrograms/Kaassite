@@ -11,6 +11,10 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  color: #e23f3f;
+}
+
 div.menu-div {
   position: fixed;
   width: 100vw;

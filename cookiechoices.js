@@ -33,7 +33,7 @@
 
                 data.position = data.position || "bottom";
                 data.language = data.language || "en";
-                data.styles = data.styles || 'position:fixed; width:100%; background-color:rgba(238, 238, 238, 0.9); margin:0; left:0; ' + data.position + ':0; padding:4px; z-index:1000; text-align:center;';
+                data.styles = data.styles || 'position:fixed; width:100%; background-color:#111111; margin:0; left:0; ' + data.position + ':0; padding:4px; z-index:1000; text-align:center;';
 
 
                 switch (data.language) {
@@ -64,9 +64,9 @@
 
                     case "nl":
 
-                        data.cookieText = data.cookieText || "Cookies helpen ons bij het leveren van onze diensten. Door gebruik te maken van onze diensten, gaat u akkoord met ons gebruik van cookies.";
-                        data.dismissText = data.dismissText || "OK";
-                        data.linkText = data.linkText || "Meer informatie";
+                        data.cookieText = data.cookieText || "Wil jij ook koekjes en kaas?";
+                        data.dismissText = data.dismissText || "Okay";
+                        data.linkText = data.linkText || "Meer Ingrediënten";
 
                         break;
 
@@ -96,7 +96,7 @@
             var butterBarStyles = styles;
             var cookieConsentElement = document.createElement('div');
             var wrapper = document.createElement('div');
-            wrapper.style.cssText = "padding-right: 50px;";
+            wrapper.style.cssText = 'padding-right: 50px; font-family: "Lobster"; color: #FFFFFF;';
 
             cookieConsentElement.id = cookieConsentId;
             cookieConsentElement.style.cssText = butterBarStyles;
@@ -134,6 +134,7 @@
             dialog.style.cssText = dialogStyle;
 
             var dismissLink = _createDismissLink(dismissText);
+            dismissLink.style.textColor = '#e23f3f';
             dismissLink.style.display = 'block';
             dismissLink.style.textAlign = 'right';
             dismissLink.style.marginTop = '8px';
