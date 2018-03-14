@@ -8,6 +8,20 @@
   <link rel="stylesheet" type="text/css" href="./stylesheet.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <style media="screen">
+    #gif-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: #000;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
   <title>Kaas</title>
 </head>
 
@@ -27,17 +41,69 @@
   <br>
   <br>
   <div class="text">
-    <h1 id="lekker">Kaasrecepten</h1>
-    <p id="lekker2">Vindt hier de lekkerste recepten, met als hoofdingrediënt: "Kaas"!</p>
-  <div id="main" class="grid-container"></div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/freqdec/slabText/abc8fd95/js/jquery.slabtext.min.js"></script>
-  <script type="text/javascript" src="./recepten.js"></script>
-</div>
-<footer class="footer">
-  Kaasmennekes &copy 2017-2018
-</footer>
+    <div id="gif-wrap">
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Initiate gifLoop for set interval
+        var refresh;
+        // Duration count in seconds
+        const duration = 1000 * 10;
+        // Giphy API defaults
+        const giphy = {
+          baseURL: "https://api.giphy.com/v1/gifs/",
+          key: "dc6zaTOxFJmzC",
+          tag: "cheese",
+          type: "random",
+          rating: "pg-13"
+        };
+        // Target gif-wrap container
+        const $gif_wrap = $("#gif-wrap");
+        // Giphy API URL
+        let giphyURL = encodeURI(
+          giphy.baseURL +
+          giphy.type +
+          "?api_key=" +
+          giphy.key +
+          "&tag=" +
+          giphy.tag +
+          "&rating=" +
+          giphy.rating
+        );
+
+        // Call Giphy API and render data
+        var newGif = () => $.getJSON(giphyURL, json => renderGif(json.data));
+
+        // Display Gif in gif wrap container
+        var renderGif = _giphy => {
+          // Set gif as bg image
+          $gif_wrap.css({
+            "background-image": 'url("' + _giphy.image_original_url + '")'
+          });
+
+          // Start duration countdown
+          refreshRate();
+        };
+
+        // Call for new gif after duration
+        var refreshRate = () => {
+          // Reset set intervals
+          clearInterval(refresh);
+          refresh = setInterval(function() {
+            // Call Giphy API for new gif
+            newGif();
+          }, duration);
+        };
+
+        // Call Giphy API for new gif
+        newGif();
+      });
+    </script>
+  </div>
+  <footer class="footer">
+    Kaasmennekes &copy 2017-2018
+  </footer>
 </body>
 
 
