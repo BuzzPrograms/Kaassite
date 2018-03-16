@@ -15,6 +15,14 @@ a {
   color: #e23f3f;
 }
 
+p {
+ color: #FFFFFF; 
+}
+
+p.home {
+ color: #111111; 
+}
+
 div.menu-div {
   position: fixed;
   width: 100vw;
@@ -48,10 +56,15 @@ li.menu a:hover {
 
 h1 {
   font-family: 'Lobster';
-  color: #111111;
+  color: #FFFFFF;
 }
 
 h2 {
+  font-family: 'Lobster';
+  color: #FFFFFF;
+}
+
+h2.home {
   font-family: 'Lobster';
   color: #111111;
 }
